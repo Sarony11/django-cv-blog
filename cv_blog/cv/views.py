@@ -5,12 +5,12 @@ from .models import CV, BlogPost
 
 def cv_view(request):
     cv = CV.objects.first()
-    return render(request, 'cv/cv.html', {'cv': cv})
+    return render(request, 'cv.html', {'cv': cv})
 
 def blog_post_list_view(request):
     blog_posts = BlogPost.objects.all()
-    return render(request, 'cv/blog_post_list.html', {'blog_posts': blog_posts})
+    return render(request, 'blog_post_list.html', {'blog_posts': blog_posts})
 
 def blog_post_detail_view(request, pk):
     blog_post = get_object_or_404(BlogPost, pk=pk)
-    return render(request, 'cv/blog_post_detail.html', {'blog_post': blog_post})
+    return render(request, 'blog_post_detail.html', {'blog_post': blog_post})
