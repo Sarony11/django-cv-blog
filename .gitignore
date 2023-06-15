@@ -28,5 +28,6 @@ __pycache__/
 .env
 
 # Ignore Django migration files (if you're using version control for migrations)
+/cv/migrations/
 /cv/migrations/*.py
 /cv/migrations/*.pyc
