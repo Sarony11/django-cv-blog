@@ -31,3 +31,4 @@ __pycache__/
 /cv/migrations/
 /cv/migrations/*.py
 /cv/migrations/*.pyc
+cv/migrations/__pycache/
