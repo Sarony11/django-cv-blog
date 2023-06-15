@@ -1,1 +1,32 @@
-env/
+# Ignore database file
+db.sqlite3
+
+# Ignore static files
+/staticfiles/
+
+# Ignore media files
+/media/
+
+# Ignore virtual environment
+/env/
+
+# Ignore local settings
+/cv_blog/settings_local.py
+
+# Ignore IDE files
+.vscode/
+.idea/
+
+# Ignore compiled Python files
+*.pyc
+__pycache__/
+
+# Ignore logs
+/logs/
+
+# Ignore environment variables file
+.env
+
+# Ignore Django migration files (if you're using version control for migrations)
+/cv/migrations/*.py
+/cv/migrations/*.pyc
