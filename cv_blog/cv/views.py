@@ -3,6 +3,10 @@ from .models import CV, BlogPost
 
 # Create your views here.
 
+def home_view(request):
+    home = CV.objects.first()
+    return render(request, 'home.html', {'home': home})
+
 def cv_view(request):
     cv = CV.objects.first()
     return render(request, 'cv.html', {'cv': cv})
